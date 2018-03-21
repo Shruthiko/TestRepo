@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="testprojectFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
         <byte-array-to-string-transformer doc:name="Byte Array to String"/>
-        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <logger message="#[payload]---" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
